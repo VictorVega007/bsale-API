@@ -20,10 +20,10 @@ Igualmente para generar la documentación de la API usé la dependencia de Swagg
 ### Stack seleccionado para el desarrollo
 
 El stack que se utilizó para el desarrollo de la API fue el siguiente:
-- [![Node][Node.js]][Node-url] : Entorno de desarrollo.
-- [![Express][Express.js]][Express-url] : Gestión de rutas o controladores.
-- [![Swagger][Swagger]][Swagger-url] : : Generación de documentación de la API.
-- [![Sequelize][Sequelize]][Sequelize-url] : Usado como ORM para conexión a la base de datos en MySQL
+[![Node][Node.js]][Node-url] Entorno de desarrollo.
+[![Express][Express.js]][Express-url] Gestión de rutas o controladores.
+[![Swagger][Swagger]][Swagger-url] Generación de documentación de la API.
+[![Sequelize][Sequelize]][Sequelize-url] Usado como ORM para conexión a la base de datos en MySQL
 
 ## Inicializar la app
 
@@ -82,7 +82,9 @@ Son dos queries usados para filtrar los productos que tengan un 10% o 20% de des
 ## Autor
 Elaborado por **Victor Vega**
 
-LinkedIn [![LinkedIn][linkedin-shield]][linkedin-url]
+LinkedIn 
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
