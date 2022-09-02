@@ -9,8 +9,6 @@ const categories = require('./routes/categoryRoute');
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 
-
-
 const swaggerDefinition = {
     definition: {
         openapi: '3.0.0',
@@ -20,9 +18,11 @@ const swaggerDefinition = {
         },
     },
     apis: [`${path.join(__dirname, './routes/*.js')}`]
-}
+};
 
 const databaseConsulting = require('./db/optionSQL');
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 (async () => {
     try {
@@ -33,10 +33,6 @@ const databaseConsulting = require('./db/optionSQL');
         throw new Error(`Error connecting to database ${error.message}`);
     }
 })();
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
 
 app.use(express.json());
 app.use(cors());
