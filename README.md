@@ -20,10 +20,10 @@ Igualmente para generar la documentación de la API usé la dependencia de Swagg
 ### Stack seleccionado para el desarrollo
 
 El stack que se utilizó para el desarrollo de la API fue el siguiente:
-- [![Node][Node.js]][] : Entorno de desarrollo.
-- [![Express][Express.js]][] : Gestión de rutas o controladores.
-- [![Swagger][Swagger.js]][] : : Generación de documentación de la API.
-- [![Sequelize][Sequelize.js]][]: Usado como ORM para conexión a la base de datos en MySQL
+- [![Node][Node.js]][Node-url] : Entorno de desarrollo.
+- [![Express][Express.js]][Express-url] : Gestión de rutas o controladores.
+- [![Swagger][Swagger]][Swagger-url] : : Generación de documentación de la API.
+- [![Sequelize][Sequelize]][Sequelize-url] : Usado como ORM para conexión a la base de datos en MySQL
 
 ## Inicializar la app
 
@@ -81,9 +81,18 @@ Son dos queries usados para filtrar los productos que tengan un 10% o 20% de des
 
 ## Autor
 Elaborado por **Victor Vega**
+
 LinkedIn [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/victor-vega-v/
+[Node.js]: https://img.shields.io/badge/Node-20232A?style=for-the-badge&logo=node.js&logoColor=61DAFB
+[Node-url]: https://nodejs.org/en/
+[Express.js]: https://img.shields.io/badge/Express-35495E?style=for-the-badge&logo=express&logoColor=4FC08D
+[Express-url]: https://expressjs.com/
+[Swagger]: https://img.shields.io/badge/Swagger-green?style=for-the-badge&logo=swagger&logoColor=black
+[Swagger-url]: https://swagger.io/
+[Sequelize]: https://img.shields.io/badge/Sequelize-0769AD?style=for-the-badge&logo=sequelize&logoColor=white
+[Sequelize-url]: https://sequelize.org/
