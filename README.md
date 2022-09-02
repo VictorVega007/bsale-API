@@ -81,4 +81,9 @@ Son dos queries usados para filtrar los productos que tengan un 10% o 20% de des
 
 ## Autor
 Elaborado por **Victor Vega**
-LinkedIn [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/victor-vega-v/]
+LinkedIn [![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/victor-vega-v/
