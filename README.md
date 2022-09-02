@@ -3,11 +3,9 @@
   <a href="">
     <img src="src/img/logo.png" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">Desafío Backend Bsale</h3>
-<br />
-
-## API para el backend de la App solicitada
+  <h2>API para el backend de la App solicitada</h2>
+</div>
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -22,10 +20,10 @@ Igualmente para generar la documentación de la API usé la dependencia de Swagg
 ### Stack seleccionado para el desarrollo
 
 El stack que se utilizó para el desarrollo de la API fue el siguiente:
-[NodeJS] : Entorno de desarrollo.
-[Express] : Gestión de rutas o controladores.
-[Swagger] : Generación de documentación de la API.
-[Sequelize] : Usado como ORM para conexión a la base de datos en MySQL
+- [![Node][Node.js]][] : Entorno de desarrollo.
+- [![Express][Express.js]][] : Gestión de rutas o controladores.
+- [![Swagger][Swagger.js]][] : : Generación de documentación de la API.
+- [![Sequelize][Sequelize.js]][]: Usado como ORM para conexión a la base de datos en MySQL
 
 ## Inicializar la app
 
@@ -83,4 +81,4 @@ Son dos queries usados para filtrar los productos que tengan un 10% o 20% de des
 
 ## Autor
 Elaborado por **Victor Vega**
-LinkedIn (https://www.linkedin.com/in/victor-vega-v/)
+LinkedIn [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/victor-vega-v/]
