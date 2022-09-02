@@ -1,4 +1,15 @@
-# Desafío Backend Bsale
+<br />
+<div align="center">
+  <a href="">
+    <img src="src/img/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Desafío Backend Bsale</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+<br />
+
 ## API para el backend de la App solicitada
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
