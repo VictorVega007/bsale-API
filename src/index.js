@@ -5,14 +5,27 @@ const cors = require('cors');
 const path = require('path');
 const products = require('./routes/productRoute');
 const categories = require('./routes/categoryRoute');
+
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerUI = require('swagger-ui-express');
+
+
+
+const swaggerDefinition = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: 'BSale API',
+            version: '1.0.0'
+        },
+    },
+    apis: [`${path.join(__dirname, './routes/*.js')}`]
+}
+
 const databaseConsulting = require('./db/optionSQL');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-app.use(express.json());
-app.use(cors());
-app.use(express.urlencoded({ extended: true }));
 
 (async () => {
     try {
@@ -24,6 +37,11 @@ app.use(express.urlencoded({ extended: true }));
     }
 })();
 
+app.use(express.json());
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerJSDoc(swaggerDefinition)));
 app.use('/products', products);
 app.use('/categories', categories);
 
@@ -31,7 +49,7 @@ const server = app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 })
 
-server.keepAliveTimeout = 30 *1000;
-server.headersTimeout = 35 * 1000;
+server.keepAliveTimeout = 30 * 10000;
+server.headersTimeout = 35 * 10000;
 
 
