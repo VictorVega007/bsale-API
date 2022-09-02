@@ -24,9 +24,6 @@ const swaggerDefinition = {
 
 const databaseConsulting = require('./db/optionSQL');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
 (async () => {
     try {
         await databaseConsulting.authenticate();
@@ -36,6 +33,10 @@ const PORT = process.env.PORT || 3000;
         throw new Error(`Error connecting to database ${error.message}`);
     }
 })();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
 
 app.use(express.json());
 app.use(cors());
