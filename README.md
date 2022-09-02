@@ -5,14 +5,12 @@
   </a>
 
   <h3 align="center">Desafío Backend Bsale</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
 <br />
 
 ## API para el backend de la App solicitada
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 En este desafío se implementa una API REST para ser consumida por cualquier aplicación web que quiera conectarse a ella. La API contiene data de productos los cuales deben obtenerse por categoria a las que pertenecen y atributos de filtrado por cada producto. 
 
 La base de datos a la cual la API se conecta es remota y creada en MySQL. Por este motivo decidí usar Sequelize como ORM para entablar la conexión respectiva. 
@@ -24,10 +22,10 @@ Igualmente para generar la documentación de la API usé la dependencia de Swagg
 ### Stack seleccionado para el desarrollo
 
 El stack que se utilizó para el desarrollo de la API fue el siguiente:
-- [NodeJS] : Entorno de desarrollo.
-- [Express] : Gestión de rutas o controladores.
-- [Swagger] : Generación de documentación de la API.
-- [Sequelize] : Usado como ORM para conexión a la base de datos en MySQL
+[NodeJS] : Entorno de desarrollo.
+[Express] : Gestión de rutas o controladores.
+[Swagger] : Generación de documentación de la API.
+[Sequelize] : Usado como ORM para conexión a la base de datos en MySQL
 
 ## Inicializar la app
 
@@ -37,14 +35,16 @@ Para poder iniciar la aplicación se debe instalar en el equipo NodeJS (https://
 ### App start 
 1. Al momento de clonar el repositorio de GitHub se deben instalar las dependencias requeridas para que se la app funcione. Para ello el comando a utilizar por medio de CLI es el siguiente:
 
-- ```console
-  npm install
-  ```
+```console
+npm install
+```
+
 2. Una vez que las dependencias estén instaladas, los comandos para iniciar la app pueden ser los siguientes:
-- ```console
-  nodemon src/index.js
-  node src/index.js
-  ```
+
+```console
+nodemon src/index.js
+node src/index.js
+```
 
 ## Rutas y métodos
 
