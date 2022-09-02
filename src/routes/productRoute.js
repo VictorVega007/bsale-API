@@ -68,7 +68,7 @@ const Product = require('../models/products');
  *          enum: ['ASC', 'DESC']
  *          default:  
  *     -   name: discount
- *         description: product discount
+ *         description: Product discount
  *         in: query
  *         schema:
  *          type: string
