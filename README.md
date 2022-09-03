@@ -41,12 +41,13 @@ Para poder iniciar la aplicación se debe instalar en el equipo NodeJS (https://
 npm install
 ```
 
-2. Una vez que las dependencias estén instaladas, los comandos para iniciar la app pueden ser los siguientes:
+2. Una vez que las dependencias estén instaladas, el comando para iniciar la app es el siguiente:
 
 ```console
-nodemon src/index.js
-node src/index.js
+npm start
 ```
+
+3. Se implementó un KeepAlive en el servidor para que el tiempo de ejecución no sea el de 5 segundos por default. Se aumento en 300 segundos. 
 
 ## Rutas y métodos
 
