@@ -63,7 +63,7 @@ Se obtiene el listado completo de todos los productos según los parámetros de 
 ## Documentación
 La documentación respectiva que se generó con Swagger se encuentra disponible en el siguiente enlace:
 
-- [![DOC]][DOC]
+- [DOC]
 
 ### Queries para filtrar productos
 
