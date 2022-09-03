@@ -65,6 +65,12 @@ La documentación respectiva que se generó con Swagger se encuentra disponible 
 
 - [DOC]
 
+La API y su respuesta en json se puede visualizar en los siguientes enlaces: 
+
+- [API-Products]
+
+- [API-Categories]
+
 ### Queries para filtrar productos
 
 Para el filtrado de productos se implementaron los siguientes atributos:
