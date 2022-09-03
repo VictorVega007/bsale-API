@@ -63,7 +63,7 @@ Se obtiene el listado completo de todos los productos según los parámetros de 
 ## Documentación
 La documentación respectiva que se generó con Swagger se encuentra disponible en el siguiente enlace:
 
--
+- [![DOC]][DOC]
 
 ### Queries para filtrar productos
 
@@ -101,3 +101,6 @@ Elaborado por **Victor Vega**
 [Swagger-url]: https://swagger.io/
 [Sequelize]: https://img.shields.io/badge/Sequelize-0769AD?style=for-the-badge&logo=sequelize&logoColor=white
 [Sequelize-url]: https://sequelize.org/
+[API-Products]: https://victor-bsale.herokuapp.com/products
+[API-Categories]: https://victor-bsale.herokuapp.com/categories
+[DOC]: https://victor-bsale.herokuapp.com/api-doc/
