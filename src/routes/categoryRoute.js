@@ -2,8 +2,10 @@
 
 const { Router } = require('express');
 const router = Router();
-const { appCache, verifyingCache } = require('../middleware/appCacheMiddleware');
-const CategoryOfProducts = require('../models/productsCategory');
+const { verifyingCache } = require('../middleware/appCacheMiddleware');
+// const CategoryOfProducts = require('../models/productsCategory');
+const CategoryController = require('../controllers/category_controller');
+// const CategoryOfProducts = require('../models/productsCategory');
 
 /**
  * @swagger
@@ -38,13 +40,20 @@ const CategoryOfProducts = require('../models/productsCategory');
  *                   $ref: '#/components/schemas/Categories'
  */
 
-router.get('/', verifyingCache, async (req, res) => {
-    const productsCategory = await CategoryOfProducts.findAll();
-    const setCache = appCache.set(req.originalUrl, productsCategory);
+// router.get('/', verifyingCache, async (req, res) => {
+//     // const productsCategory = await CategoryOfProducts.findAll();
+//     const productsCategory = CategoryController.index()
+//     console.log(productsCategory)
+//     const setCache = appCache.set(req.originalUrl, productsCategory);
 
-    setCache 
-        ? res.status(200).send(productsCategory) 
-        : res.status(404).json({error: `Category of ${productsCategory} not found`});
-});
+//     setCache 
+//         ? res.status(200).send(productsCategory) 
+//         : res.status(404).json({error: `Category of ${productsCategory} not found`});
+// });
+
+router.route('/', verifyingCache)
+    .get(CategoryController.index)
+
+
 
 module.exports = router;
