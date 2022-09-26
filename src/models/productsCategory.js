@@ -19,4 +19,6 @@ const CategoryOfProducts = databaseConsulting.define('Category', {
     timestamps: false,
 });
 
-module.exports = CategoryOfProducts;
+const consultProductsCategory = CategoryOfProducts.findAll();
+
+module.exports = consultProductsCategory;

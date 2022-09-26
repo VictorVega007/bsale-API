@@ -1,13 +1,12 @@
 'use strict';
 
-const CategoryOfProducts = require('../models/productsCategory');
+const consultProductsCategory = require('../models/productsCategory');
 const { appCache } = require('../middleware/appCacheMiddleware');
 
 module.exports = {
     index: async function (req, res) {
         res.header('Access-Control-Allow-Origin', '*');
-        const productsCategory = await CategoryOfProducts.findAll();
-
+        const productsCategory = await consultProductsCategory;
         const setCache = appCache.set(req.originalUrl, productsCategory);
 
      setCache 

@@ -31,4 +31,6 @@ const Product = databaseConsulting.define('Product', {
     timestamps: false,
 });
 
-module.exports = Product;
+const getProductsFromDatabase = (query) => Product.findAndCountAll(query);
+
+module.exports = { getProductsFromDatabase };

@@ -1,7 +1,7 @@
 'use strict';
 
 const { appCache } = require('../middleware/appCacheMiddleware');
-const Product = require('../models/products');
+const { getProductsFromDatabase } = require('../models/products');
 const { Op } = require('sequelize');
 
 module.exports = {
@@ -15,8 +15,6 @@ module.exports = {
             if (!Number.isNaN(page) && page > 0) {
                 pageSize = page;
             };
-            
-            const getProductsFromDatabase = async (query) => Product.findAndCountAll(query);
     
             const query = {
                 attributes: ['id', 'name', 'url_image', 'price', 'discount', 'category'],
@@ -44,7 +42,7 @@ module.exports = {
                         }
                     };
                 };
-            }
+            };
             
             if (req.query.order && req.query.order !== '0') {
                 const { order } = req.query;
@@ -74,6 +72,6 @@ module.exports = {
     
         } catch (error) {
             res.status(error.response.status).json({message: error.message});
-        }
+        };
     }
-}
+};
