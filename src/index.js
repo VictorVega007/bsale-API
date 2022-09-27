@@ -33,6 +33,7 @@ const PORT = process.env.PORT || 3000;
         await databaseConsulting.authenticate();
         await databaseConsulting.sync({ force: false });
         console.log('Connection established to database');
+        console.log('Connection')
     } catch (error) {
         throw new Error(`Error connecting to database ${error.message}`);
     }
