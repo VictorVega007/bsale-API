@@ -11,7 +11,15 @@ const swaggerUI = require('swagger-ui-express');
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+
+
+var corsOptions = {
+    methods: ['GET','PUT','POST','DELETE', 'OPTIONS'],
+    allowedHeaders: ['access_token','Content-Type'],
+    optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 const swaggerDefinition = {
     definition: {
