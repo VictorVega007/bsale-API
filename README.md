@@ -108,6 +108,6 @@ Elaborado por **Victor Vega**
 [Swagger-url]: https://swagger.io/
 [Sequelize]: https://img.shields.io/badge/Sequelize-0769AD?style=for-the-badge&logo=sequelize&logoColor=white
 [Sequelize-url]: https://sequelize.org/
-[API-Products]: https://victor-bsale.herokuapp.com/products
-[API-Categories]: https://victor-bsale.herokuapp.com/categories
-[DOC]: https://victor-bsale.herokuapp.com/api-doc/
+[API-Products]: https://bsale-api-wurz.onrender.com/products
+[API-Categories]: https://bsale-api-wurz.onrender.com/categories
+[DOC]: https://bsale-api-wurz.onrender.com/api-doc/
